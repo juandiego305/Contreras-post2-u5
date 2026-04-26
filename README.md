@@ -54,7 +54,8 @@ Para cumplir con los objetivos de la actividad, se implementaron los siguientes 
 
 
 ### 1. Documentación Swagger UI
-[cite_start]*(Inserta aquí la captura de pantalla de http://localhost:8080/swagger-ui.html)*
+[cite_start]*<img width="1576" height="980" alt="image" src="https://github.com/user-attachments/assets/d62ba103-ac96-42c2-b2e0-f6467360c480" />
+*
 
 ### 2. Manejo de Errores (400 Bad Request)
 [cite_start]*(Inserta aquí la captura de Postman mostrando el error al enviar un título vacío o ISBN duplicado)* 
