@@ -1,6 +1,6 @@
 # Biblioteca API - Post-Contenido 2 (Unidad 5)
 
-[cite_start]Este proyecto representa la fase avanzada del laboratorio de **Patrones de Diseño **, donde se profesionaliza una API REST mediante el desacoplamiento de capas, el manejo global de excepciones y la documentación automatizada[cite: 444].
+Este proyecto representa la fase avanzada del laboratorio de **Patrones de Diseño **, donde se profesionaliza una API REST mediante el desacoplamiento de capas, el manejo global de excepciones y la documentación automatizada.
 
 ## 🏗️ Arquitectura y Patrones Aplicados
 
