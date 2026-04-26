@@ -7,25 +7,25 @@
 Para cumplir con los objetivos de la actividad, se implementaron los siguientes componentes arquitectónicos:
 
 1.  **Patrón DTO (Data Transfer Object)**:
-    * [cite_start]Se definieron `LibroRequestDTO` y `LibroResponseDTO` para separar el modelo de dominio interno (Entity) del contrato público de la API[cite: 476].
-    * [cite_start]Esto permite validar datos de entrada sin afectar la base de datos y controlar qué información se expone al cliente[cite: 476, 480].
+   Se definieron `LibroRequestDTO` y `LibroResponseDTO` para separar el modelo de dominio interno (Entity) del contrato público de la API
+   Esto permite validar datos de entrada sin afectar la base de datos y controlar qué información se expone al cliente
 
 2.  **Capa de Mapeo (Mapper)**:
-    * [cite_start]Se implementó `LibroMapper` como un componente `@Component` encargado de la conversión bidireccional entre Entidades JPA y DTOs[cite: 505, 510].
+    Se implementó `LibroMapper` como un componente `@Component` encargado de la conversión bidireccional entre Entidades JPA y DTOs
 
 3.  **Manejo Global de Errores (@ControllerAdvice)**:
-    * [cite_start]Se configuró `GlobalExceptionHandler` para interceptar excepciones de forma centralizada [cite: 525-526].
-    * [cite_start]**404 Not Found**: Captura `NoSuchElementException` cuando no existe un ID [cite: 539-540].
-    * [cite_start]**400 Bad Request**: Captura `IllegalArgumentException` (reglas de negocio como ISBN duplicado) y `MethodArgumentNotValidException` (errores de validación de campos)[cite: 545, 552].
+   Se configuró `GlobalExceptionHandler` para interceptar excepciones de forma centralizada [cite: 525-526].
+   **404 Not Found**: Captura `NoSuchElementException` cuando no existe un ID [cite: 539-540].
+   **400 Bad Request**: Captura `IllegalArgumentException` (reglas de negocio como ISBN duplicado) y `MethodArgumentNotValidException` (errores de validación de campos)
 
 4.  **Documentación Interactiva (Swagger/OpenAPI)**:
-    * [cite_start]Integración de `SpringDoc OpenAPI` para generar la interfaz de Swagger UI, permitiendo probar los endpoints directamente desde el navegador[cite: 459, 474].
+    Integración de `SpringDoc OpenAPI` para generar la interfaz de Swagger UI, permitiendo probar los endpoints directamente desde el navegador
 
 ## 🚀 Guía de Ejecución
 
 ### Requisitos
-* [cite_start]**Java**: 17 o superior[cite: 177].
-* [cite_start]**Maven**: 3.8+[cite: 178].
+**Java**: 17 o superior
+**Maven**: 3.8+
 
 ### Instalación y Arranque
 1.  Clonar el repositorio:
